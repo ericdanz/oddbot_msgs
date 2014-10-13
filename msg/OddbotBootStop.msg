@@ -1,1 +1,1 @@
-String name
+int32 subnet
