@@ -3,16 +3,16 @@ int8 MANIPULATION = 1
 int8 SENSING = 2 
 
 int32 ip_address
-String ip_address
-# gateway
-String name
+string ip_address_string
+# subnet
+int32 subnet
 
 #	URDF (transform tree)
 #	topics publishes (package and node)
 #	topics subscribes (package and node)
 
 # Locomotion (diff and omni) (car drive)
-int8 type (diff or omni)
+int8 locomotion_type #(diff or omni)
 # 	(cmd_vel)
 # 	(odom + feedback)
 
@@ -22,7 +22,7 @@ int8 type (diff or omni)
 # 	sends D-H parameter
 
 # Sensing (pan tilt camera/laserscanner (largely used sensors))
-String type
-String sense_frame
+string sensor_type
+string sense_frame
 # D-H parameters to sense frame
 
