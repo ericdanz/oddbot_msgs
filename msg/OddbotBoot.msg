@@ -1,12 +1,28 @@
 int8 LOCOMOTION = 0
 int8 MANIPULATION = 1
-int8 SENSING = 2
+int8 SENSING = 2 
 
 int32 ip_address
 String ip_address
+# gateway
+String name
 
-#Locomotion
+#	URDF (transform tree)
+#	topics publishes (package and node)
+#	topics subscribes (package and node)
 
-#Manipulation
+# Locomotion (diff and omni) (car drive)
+int8 type (diff or omni)
+# 	(cmd_vel)
+# 	(odom + feedback)
 
-#Sensing
+# Manipulation (3DOF 4DOF 5DOF 6DOF) (not worry about gripper type)
+#	set to end effector pose
+# 	number of joints
+# 	sends D-H parameter
+
+# Sensing (pan tilt camera/laserscanner (largely used sensors))
+String type
+String sense_frame
+# D-H parameters to sense frame
+
