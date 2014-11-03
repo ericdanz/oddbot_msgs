@@ -47,6 +47,7 @@ add_message_files(
   FILES
   OddbotBoot.msg
   OddbotBootStop.msg
+  HerkulexCommand.msg
 )
 
 ## Generate services in the 'srv' folder
