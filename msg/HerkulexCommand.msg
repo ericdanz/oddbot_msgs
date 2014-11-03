@@ -1,5 +1,5 @@
 # the id value of the servo to control
-int[] name
+int8[] name
 
 # the value of the sevo to control in radians
 # value from -2.618 (-150 deg) to 2.618 (150 deg) is suggested range of dynamixel
