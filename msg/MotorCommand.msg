@@ -1,3 +1,5 @@
+std_msgs/Header header
+
 int8 POSITION = 0
 int8 VELOCITY = 1
 
